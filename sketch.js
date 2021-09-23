@@ -9,6 +9,7 @@ var bird;
 var log1,log3,log4,log5;
 var backgroundImg;
 var ground;
+var plataforma
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -38,6 +39,7 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    plataforma = new Ground(150,305,300,170);	 
 }
 
 function draw(){
@@ -62,6 +64,7 @@ function draw(){
     log5.display();
 
     bird.display();
+    plataforma.display();
 }
     
     
